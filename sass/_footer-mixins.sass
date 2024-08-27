@@ -1,0 +1,82 @@
+=text-over-footer-a-mixin
+    text-decoration: none
+    color: rgb(202, 202, 202)
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+    font-size: 16px
+    font-weight: 400
+    line-height: 19px
+    letter-spacing: 0%
+    text-align: left
+    &:hover
+        color: red
+=text-over-footer-mixin
+    display: flex
+    justify-content: space-between
+    margin: 45px 0
+    border-bottom: 1px solid rgba(255, 255, 255, 0.16)
+    padding-bottom: 20px
+    +over-footer-landscape
+        flex-direction: column
+        gap: 20px
+=footer-lists-block-mixin
+    margin-top: 25px
+    padding-bottom: 25px
+    border-bottom: 1px solid rgba(255, 255, 255, 0.16)
+    +main-footer-landscape
+        display: flex
+        flex-wrap: wrap
+
+=main-footer-block-title-mixin
+    color: $promo-and-footer-color-text
+    font-family: Nunito
+    font-size: 24px
+    font-weight: 600
+    line-height: 33px
+    letter-spacing: 0%
+    text-align: left
+    margin-bottom: 25px
+=name-of-country-a-mixin
+    color: rgb(230, 229, 229)
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+    font-size: 20px
+    font-weight: 400
+    line-height: 23px
+    letter-spacing: 0%
+    text-align: left
+=name-of-city-mixin
+    display: inline
+    +main-footer-landscape
+        display: block
+    & a
+        text-decoration: none
+        color: rgb(202, 202, 202)
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+        font-size: 16px
+        font-weight: 400
+        line-height: 19px
+        letter-spacing: 0%
+        text-align: left
+        margin-right: 35px
+        &:hover
+            color: red
+=the-footer-of-footer-mixin
+    display: flex
+    justify-content: space-between
+    align-items: center
+    padding: 20px 0
+    gap: 20px
+    +footer-landscape
+        flex-wrap: wrap
+        gap: 20px
+    & div
+        color: rgb(202, 202, 202)
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+        font-size: 11px
+        font-weight: 400
+        line-height: 13px
+        letter-spacing: 0%
+        text-align: left
+    & a
+        &:hover
+            transform: scale(1.5)
+            transition: 1s

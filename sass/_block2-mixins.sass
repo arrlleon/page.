@@ -1,0 +1,52 @@
+=cards-block-mixin
+    display: flex
+    justify-content: space-between
+    +cards-block-landscape
+        flex-wrap: wrap
+        gap: 30px
+
+=card-mixin
+    width: 398px
+    +cards-landscape
+        width: auto
+    +cards-block-landscape
+        margin: auto
+        width: 375px
+=card-image-mixin
+    height: 414px
+    width: 100%
+    +cards-landscape
+        height: auto
+=under-card-text-mixin
+    box-shadow: 0px 15px 40px -7px rgba(171, 124, 0, 0.29)
+    height: 133px
+    display: flex
+    gap: 10px
+    align-items: center
+    justify-content: center
+    color: rgb(0, 0, 0)
+    font-family: Nunito
+    font-size: 14px
+    font-weight: 700
+    line-height: 19px
+    letter-spacing: 0%
+    text-align: left
+    +block3-img-landscape
+        flex-direction: column-reverse
+
+=arrow-button-a-mixin
+    text-decoration: none
+    color: rgb(0,0 ,0 )
+    font-size: 30px
+=arrow-button-mixin
+    background-color: $second-part-logo
+    border-radius: 50%
+    display: flex
+    justify-content: center
+    align-items: center
+    height: 50px
+    width: 50px
+    box-shadow: 2px 4px 10px -4px black
+    &:hover
+        background: $blue-gradient
+        transition: 2s

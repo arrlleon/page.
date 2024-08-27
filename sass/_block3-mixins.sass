@@ -1,0 +1,51 @@
+=block3-mixin
+    display: flex
+    justify-content: space-between
+    +block3-landscape
+        flex-direction: column
+=block3-title-mixin
+    color: rgb(50, 50, 50)
+    font-family: Nunito
+    font-size: 36px
+    font-weight: 600
+    line-height: 49px
+    letter-spacing: 0%
+    text-align: left
+=icon1-mixin
+    display: flex
+    gap: 30px
+    align-items: center
+    margin-top: 70px
+=icons-text-mixin
+    & span
+        color: rgb(74, 74, 74)
+        font-family: Nunito
+        font-size: 29px
+        font-weight: 400
+        line-height: 40px
+        letter-spacing: 0%
+        text-align: left
+    & p
+        color: rgb(74, 74, 74)
+        font-family: Nunito
+        font-size: 21px
+        font-weight: 400
+        line-height: 29px
+        letter-spacing: 0%
+        text-align: left
+=right-side-block3-mixin
+    position: relative
+    &::before
+        content: ""
+        width: 476px
+        height: 431px
+        background-color: $second-part-logo
+        position: absolute
+        z-index: -1
+        top: 60px
+        left: -55px
+        +block3-img-landscape
+            display: none
+    & img
+        +block3-img-landscape
+        width: 100%

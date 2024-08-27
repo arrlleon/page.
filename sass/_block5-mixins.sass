@@ -1,0 +1,17 @@
+=block5-title-mixin
+    color: rgb(50, 50, 50)
+    font-family: Nunito
+    font-size: 36px
+    font-weight: 600
+    line-height: 49px
+    letter-spacing: 0%
+    text-align: left
+=block5-main-mixin
+    display: grid
+    grid-template-columns: repeat(4, 1fr)
+    gap: 20px
+    +block5-landscape
+        grid-template-columns: repeat(auto-fit, minmax(240px, 1fr))
+    & img
+        +cards-landscape
+        width: 100%

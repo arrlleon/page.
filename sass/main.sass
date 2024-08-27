@@ -1,0 +1,122 @@
+@import reset
+@import promo_mixins
+@import variables
+@import adaptivity
+@import block2-mixins
+@import block3-mixins
+@import block4-mixins
+@import block5-mixins
+@import footer-mixins
+
+.promo-block
+    +promo-block-mixin
+.logo-text
+    +logo-text-mixin
+.navbar a
+    text-decoration: none
+.container-for-content
+    position: relative
+    width: 85%
+.navbar-menu li a
+    +navbar-menu-li-a-mixin
+.navbar-menu li
+    +navbar-menu-li-mixin
+.navbar
+    +navbar-mixin
+.navbar-menu
+    +navbar-menu-mixin
+#last-menu-item
+    margin-right: 100px
+#menuToggle
+    +menuToggle-mixin
+.gradient
+    +gradient-mixin
+.menu-icon
+    +menu-icon-mixin
+.menu-icon span
+    +menu-icon-span-mixin
+.promo-title
+    +promo-title-mixin
+.under-promo-title
+    +under-promo-title-mixin
+.main-block
+    position: relative
+    display: flex
+    justify-content: center
+    margin-top: 100px
+
+.cards-block
+    +cards-block-mixin
+
+.card
+    +card-mixin
+
+.card-image
+    +card-image-mixin
+.under-card-text
+    +under-card-text-mixin
+.arrow-button a
+    +arrow-button-a-mixin
+.arrow-button
+    +arrow-button-mixin
+
+.block3
+    +block3-mixin
+.left-side-block3, .right-side-block3
+    +block3-landscape
+        margin: auto
+.block3-title
+    +block3-title-mixin
+.icon1
+    +icon1-mixin
+.icons-text
+    +icons-text-mixin
+.icon
+    @extend .icon1
+    margin-top: 20px
+.right-side-block3
+    +right-side-block3-mixin
+
+.block4-container
+    +block4-container-mixin
+.block4-title
+    +block4-title-mixin
+.block4-under-title
+    +block4-under-title-mixin
+.block4-button
+    +block4-button-mixin
+.block4-button img
+    +block4-button-img-mixin
+
+.block4-input
+    +block4-input-mixin
+
+.send-button
+    +send-button-mixin
+.block5-title
+    +block5-title-mixin
+.block5-main
+    +block5-main-mixin
+.footer-block
+    background: rgb(9, 58, 122)
+.text-over-footer a
+    +text-over-footer-a-mixin
+.text-over-footer
+    +text-over-footer-mixin
+.footer-lists-block
+    +footer-lists-block-mixin
+.footer-lists-block a
+    text-decoration: none
+.main-footer-block-title
+    +main-footer-block-title-mixin
+.name-of-country a
+    +name-of-country-a-mixin
+.cities-list
+    list-style-type: none
+    padding: 0
+.name-of-city
+    +name-of-city-mixin
+.block-for-footer-lists
+    margin-top: 50px
+.the-footer-of-footer
+    +the-footer-of-footer-mixin
